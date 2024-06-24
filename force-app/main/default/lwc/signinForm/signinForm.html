@@ -1,0 +1,69 @@
+<!--
+  @description       : 
+  @author            : VIKASH MUNDARI
+  @group             : 
+  @last modified on  : 06-24-2024
+  @last modified by  : VIKASH MUNDARI
+-->
+
+<template>
+    <div class="slds-grid slds-wrap slds-align_absolute-center slds-text-align_center" style="height: 100vh;">
+        <div class="slds-col slds-size_1-of-2 slds-p-around_medium sign-in-section">
+            <div class="content">
+                <h2 class="slds-text-heading_medium slds-m-bottom_medium">Sign In</h2>
+                <p class="slds-m-bottom_medium">Your Social Campaigns</p>
+                <div class="slds-m-bottom_medium">
+                    
+                    <!-- <lightning-button variant="brand-outline" label="Sign in with Google" title="Primary action with lighter look" class="slds-m-left_x-small"></lightning-button> -->
+
+                    <lightning-button variant="brand-outline" label="Sign in with Google" title="Sign in with Google">
+                        <img src={googlelogo} class="slds-button__icon social-logo" alt="Google Logo">
+                        Sign in with Google
+                    </lightning-button>
+                    
+
+                    <lightning-button variant="brand-outline" label="Sign in with Apple" title="Primary action with lighter look"  class="slds-m-left_x-small"></lightning-button>
+
+                </div>
+                <p class="slds-m-bottom_small">Or with email</p>
+
+                <lightning-input label="" placeholder="Email" type="email" value={email} onchange={handleEmailChange} class="slds-m-bottom_small"></lightning-input>
+
+                <lightning-input label="" placeholder="Password" type="password" value={password} onchange={handlePasswordChange} class="slds-m-bottom_small"></lightning-input>
+
+                <a href="#" class="slds-text-link slds-m-bottom_medium forgot-password">Forgot Password?</a>
+
+                <lightning-button variant="brand" label="Sign In" title="Primary action" onclick={handleSignIn} class="slds-m-left_x-small"></lightning-button>
+
+                <p>Not a Member yet? <a href="#" class="slds-text-link">Sign up</a></p>
+
+            </div>
+            <!-- <footer class="slds-grid slds-wrap slds-p-around_medium footer-section">
+                <div class="slds-col slds-size_1-of-4 ">
+                    <lightning-combobox name="language"
+                                        label=""
+                                        value={selectedLanguage}
+                                        placeholder="Select Language"
+                                        options={languageOptions}
+                                        onchange={handleLanguageChange}                        >                                    
+                    </lightning-combobox>
+                   
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-align_absolute-center slds-text-align_right">
+                    <lightning-button variant="base" label="Terms" class="slds-m-right_x-small" ></lightning-button>
+                    <lightning-button variant="base" label="Plans" class="slds-m-right_x-small" ></lightning-button>
+                    <lightning-button variant="base" label="Contact Us" ></lightning-button>
+                </div>
+            </footer> -->
+        </div>
+        <div class="slds-col slds-size_1-of-2 slds-p-around_medium info-section">
+            <div>
+                <img src={metroniclogo} alt="Metronic" class="slds-m-bottom_medium info-image" />
+                <h2 class="slds-text-heading_medium slds-m-bottom_medium">Fast, Efficient and Productive</h2>
+                <p>
+                    Lorem ipsum dolor sit amet. <a href="#" class="slds-text-title_bold slds-text-link_faux">Lorem, ipsum.</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas similique doloribus aut velit aliquid.
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
